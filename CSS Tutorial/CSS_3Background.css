@@ -1,0 +1,57 @@
+h1{
+    font-weight: bold;
+    text-decoration: underline;
+    color: green;
+}
+/*body{bacground image properties online code
+    background: gray url(flashpoint_227.jpg) no-repeat center center
+    fixed;background image is fixed only the foreground scrolls}*/
+body{
+    border: 5px solid pink;
+    padding: 40px;
+    background-image: url(images/Flashpoint_227.JPG), url(images/Delta5.JPG), url(images/DeltaExtreme14.bmp);
+    background-position: top right, center right, bottom right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 1000px, 1000px, 1000px;
+    /* background-origin: border-box;the image will be limited to a border is 
+    formed around the content(text)*/
+    background-color: gray;
+
+}
+body{    
+    color: rgb(39, 7, 182);
+    font-size: 1.3em;
+}
+.cyan{
+    color:cyan;
+}
+
+
+/*The following background image properties can be written in shorthand
+body{ 
+    background-color: khaki;
+    background-image: url(flashpoint_227.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+in short hand
+body{background:khaki,url(flashpoint_227.jpg),no-repeat,center center,fixed;}
+*/
+
+
+
+
+p{
+    font-size: 1.3em;
+}
+p,.green{
+    /*background-color: cadetblue;*/
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    color:green   
+}
+img{
+    border:solid green;
+}

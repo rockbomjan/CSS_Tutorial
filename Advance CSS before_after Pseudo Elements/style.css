@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding-left:10px;
+    background: green;
+}
+main{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;/*This brings the red box to the center*/
+}
+/* present */
+.heart{
+    width:200px;
+    height:200px;
+    /* background: red; */
+    background:palevioletred;
+    position: relative;/* for before and after*/
+    transform: rotate(45deg);
+    
+}
+/* before present */
+.heart:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    /* background:yellow; */
+    background: palevioletred;
+    /* border:solid green;
+    border-width: 4px; */
+    transform:translateY(-50%);/*+50% will push downwoards*/
+    border-radius: 50%; /*changes the square into a circle*/
+}
+
+.heart:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    /* background:green; */
+    background: palevioletred;
+    /* border:solid green;
+    border-width: 4px; */
+    transform:translateX(-50%);/*+50% will push right*/
+    border-radius: 50%;/*changes the square into a circle*/
+}

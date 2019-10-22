@@ -1,0 +1,13 @@
+body{
+    background-image: url(images/Flashpoint\ 155.JPG), url(images/Flashpoint\ 135.JPG), 
+    url(images/Flashpoint\ 125.JPG);
+    background-size: 500px, 500px, 500px; 
+    background-position: top right, center right, bottom right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    /*We can write in short hand, too.eg: url(image) 500px top right no repeat,*/
+    
+}
+img{
+    border: solid green;
+    width: 30em;
+}

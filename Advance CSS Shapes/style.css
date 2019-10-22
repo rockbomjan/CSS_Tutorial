@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+}
+main{
+    /* height: 100vh; */
+    line-height: 5;
+    /* display: flex; */
+    display: inline-block;
+    /* justify-content:space-between; */
+   /* vertical-align:middle; */
+   transform: translate(250%, 2%);/*x and y alignment*/
+   
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background: green;
+  }
+
+  #rectangle {
+    width: 200px;
+    height: 100px;
+    background:green;
+  }
+  #circle {
+    width: 100px;
+    height: 100px;
+    background: green;
+    border-radius: 50%
+  }
+  #oval {
+    width: 200px;
+    height: 100px;
+    background: green;
+    border-radius: 100px / 50px;
+  }
+  #triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+  }
+  #triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid green;
+  }
+  #triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid green;
+    border-bottom: 50px solid transparent;
+  }
+  #triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid green;
+    border-bottom: 50px solid transparent;
+  }
+  #triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 100px solid green;
+    border-right: 100px solid transparent;
+  }
+  #triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 100px solid green;
+    border-left: 100px solid transparent;
+  }
+  #triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid green;
+    border-right: 100px solid transparent;
+  }
+  #triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid green;
+    border-left: 100px solid transparent;
+  }
+  #curvedarrow {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 9px solid red;
+    transform: rotate(10deg);
+  }
+  #curvedarrow:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 3px solid green;
+    border-radius: 20px 0 0 0;
+    top: -12px;
+    left: -9px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+  }
+
+

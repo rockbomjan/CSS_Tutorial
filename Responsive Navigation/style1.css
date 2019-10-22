@@ -1,0 +1,129 @@
+/* nav css goes here */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container{
+    width:100%;
+    max-width: 117rem;
+    margin: 0 auto;/*set the container in the middle*/
+    padding: 0 1.5rem;/* top to bottom: 0 left to right:1.5rem */
+}
+.menu-icons{
+    color: #eee;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1500; /*To make sure that it stays on top of all of other contents*/
+    display:none;/*Hiding the menu icon*/
+}
+nav{
+    width: 100%;
+    height: 8rem;
+    border-bottom: 1px solid rgba(255,255,255, .1);
+
+}
+/*knife and spoon logo*/
+.logo{
+    width: 5rem;
+    height: 5rem;
+    background-color: #eb3007;
+    display:flex;
+    border-radius: 100%;/*circular shape*/
+    margin-right: 5rem;/*for the seperation of log with ul*/
+}
+.logo i{
+    margin: auto;
+    font-size: 3rem;
+    color: #eee;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li{/*align horizontally*/
+    line-height: 8rem;
+    position: relative;
+}
+.sub-menu li{
+    line-height: 4rem;
+}
+.nav-list a{
+    display:block;
+    color: #eee;
+    padding:0 1.5rem;/*left and right*/
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: color 650ms;
+}
+.nav-list a:hover{
+    color: #eb3007;
+}
+.btn{
+    padding: 1.3rem;/*padding all around*/
+    display: inline-block;
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 5rem;
+    transition: background-color 650ms;
+}
+.btn:hover{
+    color: pink;
+    background-color: rgba(0,0,0,.2)
+}
+.sub-menu{
+    width: 20rem;
+    display: block;
+    position: absolute;
+    border-top: 3px solid #eb3007;
+    background-color: #191919;
+    z-index: top;
+    top: 16rem; 
+    transition: all 650ms ease;
+}
+.sub-menu::before{/*a triangle appears at the border*/
+    content: "";
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent;
+    border-bottom-color: palevioletred;
+}
+.sub-menu .sub-menu::before{/*moving the triangle of child sub menu from the 
+    top border to the left of the border*/
+    top: .9rem;
+    left: -2.5rem;
+    border: 1.2rem solid transparent;
+    border-right-color: green;
+
+}
+/* end nav css */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8))
+    url("images/bg.jpeg") center no-repeat;
+    background-size: cover;
+}

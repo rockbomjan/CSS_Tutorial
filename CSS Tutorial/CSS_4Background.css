@@ -1,0 +1,57 @@
+ol {
+    list-style: none; 
+    counter-reset: li;
+}
+li::before {
+    content: counter(li); 
+    color: red;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    font-weight: bold;
+}
+li {
+    counter-increment: li;/*increase list number*/    
+}
+body{
+    background-color: black;
+}
+h1{
+    color: yellowgreen;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:green;
+    text-decoration: underline;
+}
+img{
+    border: solid green;
+    width: 30em;
+}
+.green{
+    border: 5px dotted green;
+    padding: 40px;
+    background-color: pink;
+    background-clip: border-box;/*inside the edge of the background color*/
+}
+.pink{
+    border: 5px dotted blue;
+    padding: 30px;
+    background-color: green;
+    background-clip: padding-box;/*outside the edge of the background color*/
+}
+.yellow{
+    border: 5px dotted blue;
+    padding: 20px;
+    background-color: yellowgreen;
+    background-clip: content-box;/*background color is limited to the content*/
+}
+textarea{
+    font-size: 1.5em;
+    display: block;/* for center alignment*/
+    margin-left: auto;/* for center alignment*/
+    margin-right: auto;/* for center alignment*/
+    
+}
+
+

@@ -1,0 +1,7 @@
+sliderbox{
+    position: relative;
+    width: 3200px;
+}
+sliderbox::img{
+    float: left;
+}

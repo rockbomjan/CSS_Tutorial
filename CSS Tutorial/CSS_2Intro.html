@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Intro</title>
+    <!--Two spaces - Type in &ensp;
+        Four spaces - Type in &emsp;
+        Tab - Type in &nbsp;&nbsp;&nbsp;&nbsp;-->
+    <link rel = "stylesheet" href = "CSS_2Iintro.css">
+    
+</head>
+<body bgcolor="#ccccff">
+    <h1>CSS(Cascading Style Sheet) Intro2</h1>
+        <p><b>Element Specific Style Class</b></p>
+        <p><b>An element specific style class starts with the element name,
+            followed by a dot operator, which is followed by the class
+            name.</b>
+        </p>
+        <p class = "italic">Syntax:<br/>
+        element_name.class_name{class definition}<br/>
+        h1.red{color:red;}
+        </p>
+        <p class = 'heading1'><b>Using Two or More classes</b></p>
+        <p class = "css">CSS syntax:<br/>
+            p.red{color:red;}//This attribute is applied to a class having
+            the word "red" in the p tag. It means, it is applied to two 
+            p tag below in the html code. This is an element specific
+            style.<br/>
+            p.look{font-size:1.2em;}<br/>//This attribute is applied to a 
+            class having the word "look" in the p tag. It means, it is 
+            applied to only one p tag below in the html code. This is 
+            an element specific style.<br/>  
+            .align{text-align:center;}//This attribute is applied to a 
+            class having the word "align" in the p and h1 tag. It means, 
+            it is applied to only one p and one h1 tag below in 
+            the html code.This is a universal style<br/>  
+        </p>
+        <pre>
+                &lt;h1 class="align"&gt;CSS&lt;/h1&gt;
+                &lt;p class="red look"&gt;
+                &lt;p class="red align"&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;&lt;title&gt;Title&lt;/title&gt;&lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;p&gt;Unrendred html&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                &lt;/p&gt;
+                </pre>
+        <ol>
+            <li class = "red">
+                    The quick brown fox jumps over the lazy dog. The quick brown fox jumps 
+                    over the lazy dog. The quick brown fox jumps over the lazy dog. The quick 
+                    brown fox jumps over the lazy dog. The quick brown fox jumps over the 
+                    lazy dog. The quick brown fox jumps over the lazy dog. The quick brown 
+                    fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+                    The quick brown fox jumps over the lazy dog.
+            </li>
+            <hr>
+            <h3>Example of Grouping Selectors in CSS(use comma(,) separate the selectors.</h3>
+            <li class = 'blue'>
+                    The quick brown fox jumps over the lazy dog. The quick brown fox jumps 
+                    over the lazy dog. The quick brown fox jumps over the lazy dog. The quick 
+                    brown fox jumps over the lazy dog. The quick brown fox jumps over the 
+                    lazy dog. The quick brown fox jumps over the lazy dog. The quick brown 
+                    fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+                    The quick brown fox jumps over the lazy dog.
+            </li>
+            <hr>
+            <h3>Background Properties in CSS.</h3>
+            <img src = "images/background property.jpg"/><br/>
+            <li>
+                    The quick brown fox jumps over the lazy dog. The quick brown fox jumps 
+                    over the lazy dog. The quick brown fox jumps over the lazy dog. The quick 
+                    brown fox jumps over the lazy dog. The quick brown fox jumps over the 
+                    lazy dog. The quick brown fox jumps over the lazy dog. The quick brown 
+                    fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+                    The quick brown fox jumps over the lazy dog.
+            </li>
+        </ol>
+    
+</body>
+</html>

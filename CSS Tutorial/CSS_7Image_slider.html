@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Slider</title>
+    <!--<link rel = "stylesheet" href = "CSS_7Image_slider.html"/>-->
+    <style>
+    img{
+        border: solid green;
+        width: 400px;
+    }
+    #sliderbox{
+    position: relative;
+    width: 1600px;/*500(size of image)x4*/
+    animation-name:slideranimation;/*slideranimation name is your choicd*/
+    animation-duration:20s;
+    }
+    #sliderbox img{/*bringing the images to horizontal order*/
+    float: left;
+    }
+    /*animpation property*/
+    @keyframes slideranimation
+    {
+        0%
+        {
+            left:0px;/*no anmation at 0px*/
+        }
+        20% /*no animation for 4 second out of 100%*/
+        {
+            left:0px;
+        }
+        25%/*5 second per image animation. 29% to 25% is 1 second*/
+        {
+            left: -400px;/*image will move 800px left*/
+        }
+        45%/*9 second per image animation. 25% to 45% is 1 second*/
+        {
+            left: -400px;
+
+        }
+        50%
+        {
+            left:-800px;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Image Slider</h1>
+        <div id = 'container'>
+            <div id = 'sliderbox'>
+                <img src ="images/Flashpoint 124.JPG"/>
+                <img src ="images/Flashpoint 125.JPG"/>
+                <img src ="images/Flashpoint 135.JPG"/>
+                <img src ="images/Flashpoint 155.JPG"/>
+            </div>
+        </div>
+    
+</body>
+</html>

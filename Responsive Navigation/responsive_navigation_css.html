@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Navigation with Animated Multi Level dropdown</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <!-- Nav markup goes here -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                    <i class="icon ion-md-menu"></i>
+                    <i class="icon ion-md-close"></i>
+                </div>
+                <a href="index.html" class="logo">
+                    <i class="icon ion-md-restaurant"></i>
+                </a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu<!-- Menu Meal -->
+                            <i class="icon ion-md-arrow-dropdown"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <!--Sub Menu1-->
+                            <li>
+                                <a href="#">Breakfast</a>
+                            </li>
+                            <li>
+                                <a href="#">Lunch
+                                    <i class="icon ion-md-arrow-dropdown"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <!--Sub Sub Menu1-->
+                                    <li>
+                                        <a href="#">Food</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Food</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">More...
+                                            <i class="icon ion-md-arrow-dropdown"></i>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <!--Sub Sub Menu2-->
+                                            <li>
+                                                <a href="#">Food</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Food</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Food</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Dinner</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Our Chefs</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class = "move-right btn">
+                       <a href="#">Book a Table</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Nav -->
+    <!-- Hero -->
+    <section class = "hero">
+        <div class="text">
+        <h2>Proudly Serving</h2>
+        <h1>Delicious Food Daily</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href = "#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <script src = "scripts.js"></script>
+</body>
+</html>
